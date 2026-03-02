@@ -18,8 +18,8 @@ app.use(cors({
 app.use(express.json());
 
 /* IMPORTANT ROUTES */
-app.use("/api/auth", authRoutes);
-app.use("/api/notes", noteRoutes);
+app.use("/auth", authRoutes);
+app.use("/notes", noteRoutes);
 
 app.get("/", (req, res) => res.send("API running"));
 
